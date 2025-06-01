@@ -66,7 +66,7 @@ function loadPuzzle(level) {
     document.getElementById("puzzleContainer").classList.remove("hidden");
     document.getElementById("levelTitle").textContent = `Puzzle ${level}`;
 
-    const imgSrc = `images/${String(level).padStart(2, '0')}.jpg`;
+    const imgSrc = `img/${String(level).padStart(2, '0')}.jpg`;
     generatePieces(imgSrc);
 }
 
