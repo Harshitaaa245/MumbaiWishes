@@ -51,7 +51,7 @@ window.onload = () => {
 
     for (let i = 1; i <= TOTAL_PUZZLES; i++) {
         const img = document.createElement("img");
-        img.src = `images/${String(i).padStart(2, '0')}.jpg`;
+        img.src = `img/${String(i).padStart(2, '0')}.jpg`;
         img.className = "puzzle-thumbnail" + (i === 1 ? " unlocked" : "");
         img.onclick = () => {
             if (i <= unlockedLevel) loadPuzzle(i);
